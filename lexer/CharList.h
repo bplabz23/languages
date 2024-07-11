@@ -16,8 +16,8 @@
 struct CharList
 {
 
-    CharNode start;
-    CharNode end;
+    CharNode* start;
+    CharNode* end;
 
 
     CharList();
