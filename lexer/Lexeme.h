@@ -23,20 +23,11 @@ struct Token
 {
 	// Data
 	std::string lexeme;
-	int token_type;
+	std::string token_type;
 	
 	// Functions
-	Token(std::string lexeme, int token_type);
-	Token();
-
-	std::string toString();
+	Token(std::string lexeme, std::string token_type);
 };
 
-
-
-enum Tokens
-{
-	KEYWORD, EQU, ADD, SUB, MUL, DIV, INT, ID
-};
 
 

@@ -7,8 +7,6 @@
 *		Description		:	Header file
 *
 *
-*		Notes:
-*
 */
 
 
