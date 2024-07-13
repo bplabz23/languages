@@ -66,8 +66,8 @@ vector<Token> lexer(string program)
         {
 
             lex_buf.push( prgm_buf.dequeue() );     // Load a char into the lexeme buffer
-            cout << lex_buf.toString() << '\t';
-            cout << prgm_buf.toString() << endl;
+            //cout << lex_buf.toString() << '\t';
+            //cout << prgm_buf.toString() << endl;
         }
         while( is_token(lex_buf) == true && prgm_buf.start != nullptr );
 
@@ -86,13 +86,12 @@ vector<Token> lexer(string program)
         else                                                
         {
             prgm_buf.insert( lex_buf.pop() );               // Otherwise, move back 1 token to restore the longest match
-            cout << lex_buf.toString() << '\t';
-            cout << prgm_buf.toString() << endl;
+            //cout << lex_buf.toString() << '\t';
+            //cout << prgm_buf.toString() << endl;
         }
 
 
         int token_type = get_token(lex_buf);                            // Get the token type of the lexeme
-        cout << Token(lex_buf.toString(), token_type).toString();
         token_buf.push_back( Token(lex_buf.toString(), token_type) );   // Add token to our list
 
 

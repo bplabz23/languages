@@ -7,7 +7,9 @@ using namespace std;
 int main()
 {
 
-    string prgm = "x = 420";
+    string prgm = "x = 420\n";
+    prgm += "if a = 7\n";
+    prgm += "then x = x + 7";
 
     vector<Token> lexedProgram = vector<Token>();
 
